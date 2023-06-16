@@ -1,6 +1,6 @@
-#Guajavita 
+# Guajavita 
 
 
 
 # Why 
-[Why? For the glory of Satan of course](./img/wftgosoc.jpg)
+![Why? For the glory of Satan of course](./img/wftgosoc.jpg)
