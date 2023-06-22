@@ -7,7 +7,7 @@
 
 | Primitive Type      | Size (in bytes) |
 | ------------------- | --------------- |
-| bool                | 1               |
+| bool                | 1 *bit               |
 | byte                | 1               |
 | int8                | 1               |
 | int16               | 2               |
@@ -24,13 +24,20 @@
 | char                | 4               |
 
 ### Variables
-**All Variables are unmutable**, therefor they have to be initialized 
+**All Variables are immutable**, therefor they have to be initialized 
 ```
 var x int32 = 123;
 var y int = 0xFFF;
 ```
 
+### Arrays
+
+```
+var primes []int =[2, 3, 5, 7, 11, 13]
+```
+
 ### Control Flow
+**Guajavita is an opinionated language, opening braces must be in the same line**
 
 ### If
 
@@ -44,17 +51,48 @@ statements
 }
 ```
 
-**guaJavita is an opinionated language, opening braces must be in the same line**
+
 
 ### for loop
 
 ```
-var letters []char = ["A","B","C","👾","た"];
+var letters []char = ["A", "B", "C","👾", "た"];
 for (var i = 0; i < letters.length; i++) {
   print(letters[i] + "<be>");
 } 
 ```
 
+### while 
+```
+while boolean {
+ statements
+}
+```
+
+## Functions
+All Guajavita must return a value, that value must be handle by the caller. 
+
+```
+func add(x int, y int) int {
+  return x+y;
+}
+
+int main () {
+ var result = add(1,2);
+ print(result);
+}
+```
+
+```
+func add(x int, y int) int {
+  return x+y;
+}
+
+int main () {
+ var result = add(1,2);
+ print(result);
+}
+```
 
 # Why 
 ![Why? For the glory of Satan of course](./img/wftgosoc.jpg)
