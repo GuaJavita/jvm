@@ -26,8 +26,8 @@
 ### Variables
 **All Variables are unmutable**, therefor they have to be initialized 
 ```
-var x int32 = 123
-var y int = 0xFFF
+var x int32 = 123;
+var y int = 0xFFF;
 ```
 
 ### Control Flow
@@ -49,7 +49,7 @@ statements
 ### for loop
 
 ```
-var letters []char = ["A","B","C","👾","た"]
+var letters []char = ["A","B","C","👾","た"];
 for (var i = 0; i < letters.length; i++) {
   print(letters[i] + "<be>");
 } 
